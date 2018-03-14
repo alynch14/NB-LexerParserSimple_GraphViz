@@ -15,7 +15,7 @@ package MockCompiler;
 <S> ::= <NP> <V> <NP> <EOS>
 <NP> ::= <A> <AN>
 <AN> ::= <ADJ> <N> | <N>                       // Illustrates Choices
-
+<AdVerb> ::= <ADV> <V> | <V>
 <ADJ> ::= fast | slow
 <A> ::= a | the
 <V> ::= loves | hates | eats
@@ -78,7 +78,7 @@ public class SyntaxAnalyzer {
 		AdjNoun(node);
 	}
 
-	// <AN> ::= <ADJ> <N> | <N>  
+	// <AN> ::= <ADJ> <N> | <N>
 	void AdjNoun(int from) throws ParseException {
 		int node = ++nodeCount;
 		log("<AN>", from, node);
@@ -154,7 +154,7 @@ public class SyntaxAnalyzer {
 
 	private void log(String bnf, int from, int to, String lexeme) {
 		log(bnf, from, to);
-		
+
 		final String t = "\t\"%s\" -> {\"%s\" [label=\"%s\", shape=rect]};%n";
 		System.out.printf(t, to, to + "_term", lexeme);
 	}
@@ -175,12 +175,12 @@ public class SyntaxAnalyzer {
 		System.out.println("\nCopy/Paste the above output into: http://www.webgraphviz.com/\n");
 
 		// Automatically open the default browser with the url:
-//		try {
-//			if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-//				Desktop.getDesktop().browse(new URI("http://www.webgraphviz.com/"));
-//			}
-//		} catch (IOException | URISyntaxException ex) {
-//			java.util.logging.Logger.getAnonymousLogger().log(java.util.logging.Level.WARNING, "Could not open browser", ex);
-//		}
+//    try {
+//       if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+//          Desktop.getDesktop().browse(new URI("http://www.webgraphviz.com/"));
+//       }
+//    } catch (IOException | URISyntaxException ex) {
+//       java.util.logging.Logger.getAnonymousLogger().log(java.util.logging.Level.WARNING, "Could not open browser", ex);
+//    }
 	}
 }

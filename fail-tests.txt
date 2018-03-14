@@ -1,0 +1,8 @@
+### These are all examples that should fail to parse
+
+the rat hates the dog and cat
+a cat chases the rat
+the dogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdogdog eats a cat
+a rat silently hates the dog
+cat eats dog
+the dog

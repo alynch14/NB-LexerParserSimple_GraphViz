@@ -1,0 +1,10 @@
+### These are all Examples that should parse successfully.
+
+the rat hates the dog
+the dog eats the cat
+a cat eats a rat
+the fast cat loves the slow dog
+
+
+#the rat hates 1234 dog and the dog hates the rat
+#the rat hates XXX dog

@@ -1,0 +1,9 @@
+<S> ::= <NP> <V> <NP> <COMPOUND> <EOS>
+<NP> ::= <A> <AN>
+<AN> ::= <ADJ> <N> | <N>                       // Illustrates Choices
+<COMPOUND> ::= <CONJUNCTION> <S> | <EMPTY>     // Illustrates Recursion (and a choice)
+
+<A> ::= a | the
+<V> ::= loves | hates | eats
+<N> ::= dog | cat | rat
+<CONJUNCTION> ::= and

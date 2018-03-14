@@ -14,9 +14,13 @@ import java.util.TreeSet;
 public enum TOKEN {
 
 	ARTICLE("a", "the"), // a list of articles
-	NOUN("dog", "cat", "rat"), // a list of nouns
-	VERB("loves", "hates", "eats"), // a list of verbs
-	ADJ("fast", "slow"),
+	NOUN("dog", "cat", "rat", "house", "tree"), // a list of nouns
+	VERB("loves", "hates", "eats", "chases", "stalks"), // a list of verbs
+	ADVERB("quickly", "silently", "slowly", null),
+	ADJ("fast", "slow", "furry", "lazy", "sneaky", "tall", null),
+	PREPOSITION("around", "up", "over"),
+	CONJUNCTION("and" /*+ TOKEN.ARTICLE*/, "or"/* + TOKEN.ARTICLE*/),
+	ST(".", "!"),//a list of sentence terminators
 	EOS(TOKEN.EOS_MARKER), // End of statement marker. (A character not used for anything else.)
 	UNKNOWN(); // An unknown token
 
@@ -29,7 +33,7 @@ public enum TOKEN {
 	// Construct the token with the list of lexems
 	private TOKEN(String... tokenStrings) {
 		this.lexemeList = Collections.unmodifiableSortedSet(
-			new TreeSet<>(Arrays.asList(tokenStrings)));		
+				new TreeSet<>(Arrays.asList(tokenStrings)));
 	}
 
 	/**

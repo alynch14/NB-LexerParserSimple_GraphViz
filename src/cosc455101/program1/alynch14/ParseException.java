@@ -1,4 +1,9 @@
-package MockCompiler;
+package cosc455101.program1.alynch14;
+
+/*
+Course: cosc 455101
+Name: Lynch, Adam
+ */
 
 /**
  * Parsing exception. For simplicity, this is used for both lexical errors as

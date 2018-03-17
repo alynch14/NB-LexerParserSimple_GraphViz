@@ -1,4 +1,9 @@
-package MockCompiler;
+package cosc455101.program1.alynch14;
+
+/*
+Course: cosc 455101
+Name: Lynch, Adam
+ */
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -20,8 +25,8 @@ public enum TOKEN {
 	ADJ("fast", "slow", "furry", "lazy", "sneaky", "tall", null),
 	PREPOSITION("around", "up", "over"),
 	CONJUNCTION("and" /*+ TOKEN.ARTICLE*/, "or"/* + TOKEN.ARTICLE*/),
-	ST(".", "!"),//a list of sentence terminators
-	EOS(TOKEN.EOS_MARKER), // End of statement marker. (A character not used for anything else.)
+//	ST(".", "!"),//a list of sentence terminators
+	EOS(TOKEN.EOS_MARKER, ".", "!"), // End of statement marker. (A character not used for anything else.)
 	UNKNOWN(); // An unknown token
 
 	// The lexemes under this token

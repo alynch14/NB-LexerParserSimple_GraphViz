@@ -1,4 +1,9 @@
-package MockCompiler;
+package cosc455101.program1.alynch14;
+
+/*
+Course: cosc 455101
+Name: Lynch, Adam
+ */
 
 /**
  * COSC 455 Programming Languages: Implementation and Design.
@@ -35,7 +40,7 @@ public class LexicalAnalyzer {
 	 * allows this class to just focus on one job: converting identifying the
 	 * lexemes and converting them into tokens.
 	 *
-	 * @throws MockCompiler.ParseException Thrown if a parsing error occurs.
+	 * @throws ParseException Thrown if a parsing error occurs.
 	 */
 	public void start(String programSource) throws ParseException {
 		sourceLine = programSource;
@@ -52,7 +57,7 @@ public class LexicalAnalyzer {
 	 * digits and other special characters - it simply looks for characters,
 	 * spaces and end of line characters to determine relevant tokens.
 	 *
-	 * @throws MockCompiler.ParseException
+	 * @throws ParseException
 	 */
 	public void parseNextToken() throws ParseException {
 		resetLexemeBuffer();

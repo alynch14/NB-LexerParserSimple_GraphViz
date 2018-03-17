@@ -1,4 +1,9 @@
-package MockCompiler;
+package cosc455101.program1.alynch14;
+
+/*
+Course: cosc 455101
+Name: Lynch, Adam
+ */
 
 /**
  * COSC 455 Programming Languages: Implementation and Design.
